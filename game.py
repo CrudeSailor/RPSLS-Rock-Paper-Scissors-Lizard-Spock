@@ -97,7 +97,12 @@ class Game:
                 self.player1.wins += 1
                 round_count += 1
                 print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[4]} beats {self.player2.gesture_lists[0]}.')
+            else:
+                round_count += 1
+                self.player2.wins += 1
+                print(f'{self.player2.name} wins the round. {self.player2.gesture_selected} beats {self.player1.gesture_selected}')
 
+            
 
 
 

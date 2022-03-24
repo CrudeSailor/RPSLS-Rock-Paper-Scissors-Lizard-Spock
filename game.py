@@ -24,6 +24,7 @@ class Game:
         print('-Paper disproves Spock')
         print('-Spock vaporizes Rock')
         print('-Rock crushes Scissors')
+        print('Best out of three wins')
 
     def game_type(self):
         pick_game = int(input("Please choose '1' for Single Player or '2' for Multi-player: "))
@@ -44,6 +45,31 @@ class Game:
                     self.player2.set_name()
                     print("Multi-Player Chosen")
                     game_type = True
+
+    def game_play(self):
+        round_count = 1
+    
+        while self.player1.wins < 2 and self.player2.wins < 2:
+            print(f'Lets start Round {round_count}')
+            self.player1.choose_gesture()
+            self.player2.choose_gesture()
+
+            if self.player1.gesture_selected == self.player2.gesture_selected:
+                print('Tie')
+                round_count += 1
+            elif self.player1.gesture_selected == self.player1.gesture_lists[0] and self.player2.gesture_selected == self.player2.gesture_lists[2]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[0]} beats {self.player2.gesture_lists[2]}.')
+                # We can now use this same code for the rest of the outcomes, just change it to the right info for the outcome
+                 
+            
+
+
+
+
+
+    
 
 
 

@@ -10,11 +10,11 @@ class Humans(Player):
         
     def choose_gesture(self):
         gesture_confirmed = False
-        print(f"Enter in '0' for {self.gesture_list[0]}")
-        print(f"Enter in '1' for {self.gesture_list[1]}")
-        print(f"Enter in '2' for {self.gesture_list[2]}")
-        print(f"Enter in '3' for {self.gesture_list[3]}")
-        print(f"Enter in '4' for {self.gesture_list[4]}")
+        print(f"Enter in '0' for {self.gesture_lists[0]}")
+        print(f"Enter in '1' for {self.gesture_lists[1]}")
+        print(f"Enter in '2' for {self.gesture_lists[2]}")
+        print(f"Enter in '3' for {self.gesture_lists[3]}")
+        print(f"Enter in '4' for {self.gesture_lists[4]}")
 
         while gesture_confirmed is False:
             selected_gesture = int(input('Enter in the number (gesture) you want to play: '))

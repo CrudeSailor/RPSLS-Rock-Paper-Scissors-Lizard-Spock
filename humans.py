@@ -17,7 +17,7 @@ class Humans(Player):
         print(f"Enter in '4' for {self.gesture_list[4]}")
 
         while gesture_confirmed is False:
-            selected_gesture = int(input('Enter in the number (gesture) you want to play.'))
+            selected_gesture = int(input('Enter in the number (gesture) you want to play: '))
             if selected_gesture >= 0 and selected_gesture <= 4:
                 if selected_gesture == 0:
                     self.gesture_selected = self.gesture_lists[0]
@@ -41,8 +41,8 @@ class Humans(Player):
                     gesture_confirmed = True
             else:
                 print("Invaild number, please try again.") 
-                
-                       
+
+
 
 
 

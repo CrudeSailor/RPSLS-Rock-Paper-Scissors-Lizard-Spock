@@ -7,7 +7,10 @@ class Game:
         self.player2 = None
     
     def run_game(self):
-        pass
+        self.display_greeting()
+        self.game_type()
+        self.game_play()
+        self.display_winner()
 
     def display_greeting(self):
         print('Welcome to Rock, Paper, Scissors, Lizard, Spock')
@@ -104,8 +107,14 @@ class Game:
 
             
 
+    def display_winner(self):
+        if self.player1.wins == 2:
+            print(f'{self.player1.name} Won!')
+        elif self.player2.wins == 2:
+            print(f'{self.player2.name} Won!')
 
 
+            
 
 
 

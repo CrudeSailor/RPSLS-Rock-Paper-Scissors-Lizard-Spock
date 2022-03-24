@@ -61,16 +61,42 @@ class Game:
                 self.player1.wins += 1
                 round_count += 1
                 print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[0]} beats {self.player2.gesture_lists[2]}.')
-                # We can now use this same code for the rest of the outcomes, just change it to the right info for the outcome
-                 
-            
-
-
-
-
-
-    
-
+            elif self.player1.gesture_selected == self.player1.gesture_lists[0] and self.player2.gesture_selected == self.player2.gesture_lists[3]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[0]} beats {self.player2.gesture_lists[3]}.')    
+            elif self.player1.gesture_selected == self.player1.gesture_lists[2] and self.player2.gesture_selected == self.player2.gesture_lists[1]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[2]} beats {self.player2.gesture_lists[1]}.') 
+            elif self.player1.gesture_selected == self.player1.gesture_lists[2] and self.player2.gesture_selected == self.player2.gesture_lists[3]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[2]} beats {self.player2.gesture_lists[3]}.')
+            elif self.player1.gesture_selected == self.player1.gesture_lists[1] and self.player2.gesture_selected == self.player2.gesture_lists[0]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[1]} beats {self.player2.gesture_lists[0]}.')
+            elif self.player1.gesture_selected == self.player1.gesture_lists[1] and self.player2.gesture_selected == self.player2.gesture_lists[4]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[1]} beats {self.player2.gesture_lists[4]}.')
+            elif self.player1.gesture_selected == self.player1.gesture_lists[3] and self.player2.gesture_selected == self.player2.gesture_lists[4]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[3]} beats {self.player2.gesture_lists[4]}.')
+            elif self.player1.gesture_selected == self.player1.gesture_lists[3] and self.player2.gesture_selected == self.player2.gesture_lists[1]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[3]} beats {self.player2.gesture_lists[1]}.')    
+            elif self.player1.gesture_selected == self.player1.gesture_lists[4] and self.player2.gesture_selected == self.player2.gesture_lists[2]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[4]} beats {self.player2.gesture_lists[2]}.')
+            elif self.player1.gesture_selected == self.player1.gesture_lists[4] and self.player2.gesture_selected == self.player2.gesture_lists[0]:
+                self.player1.wins += 1
+                round_count += 1
+                print(f'{self.player1.name} wins the round. {self.player1.gesture_lists[4]} beats {self.player2.gesture_lists[0]}.')
 
 
 
